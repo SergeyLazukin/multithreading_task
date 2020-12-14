@@ -5,14 +5,7 @@ import java.util.Random;
 
 public class Calculate {
 
-    private final DownloadResult downloadResult;
-
-    public Calculate(DownloadResult downloadResult) {
-        this.downloadResult = downloadResult;
-    }
-
-
-    public CalculateResult calculate() {
+    public CalculateResult calculate(DownloadResult downloadResult) {
         Random r = new Random();
         CalculateResult result = new CalculateResult();
         result.id = downloadResult.id;
